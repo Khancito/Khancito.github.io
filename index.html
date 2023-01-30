@@ -7,87 +7,85 @@
     <title>Currículum Vitae</title>
     <link rel="icon" type="image/x-icon" href="https://www.cvmaker.com.ar/static/favicon-4c55d1408140f6d1f9467ed6b262fad1.ico">
     <meta property="og:title" content="Currículum Vitae" />
-    <meta property="og:description" content="Accedé para poder ver mí CV" />
-    <meta property="og:type" content="website" />  <!-- PROTOCOLO OG    -  CAMBIAR LOS 2 DE ABAJO TAMBIÉN CUANDO ESTÉ EL LINK LISTO -->
+    <meta property="og:description" content="Accedé para conocer mi propuesta." />
+    <meta property="og:type" content="website" />  <!-- PROTOCOLO OG FB FUNCIONAL -->
     <meta property="og:url" content="https://khancito.github.io/" />   
     <meta property="og:image" content="https://medialab.news/wp-content/uploads/2020/08/Revista-Gerente.png" />
-    <meta name="twitter:title" content="Currículum Vitae" />                               <!-- PROTOCOLO OG TWITTER, COMPLETAR CON URLS Y REVISAR CUANDO ESTÉ PQ NO SÉ SI FUNCA ASÍ-->
-    <meta name="twitter:description" content="Accedé para poder ver mi CV" />
+    <meta name="twitter:title" content="Currículum Vitae" />                               <!-- PROTOCOLO OG TWITTER FUNCIONAL-->
+    <meta name="twitter:description" content="Accedé para conocer mi propuesta." />
     <meta name="twitter:type" content="website"/>
     <meta name="twitter:url" content="https://khancito.github.io/" />
     <meta name="twitter:image" content="https://medialab.news/wp-content/uploads/2020/08/Revista-Gerente.png" />
-    <link rel="stylesheet" href="js/function.js">             <!-- ENLAZAMOS CON LA HOJA DE ESTILOS EN CSS -->
+    <link rel="stylesheet" href="css/style.css">             <!-- ENLAZAMOS CON LA HOJA DE ESTILOS EN CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--GOOGLE FONTS APLICAMOS DISTINTAS FUENTES-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">       
 
 </head>
 <body>
-    <!--H1 + FOTO-->
     <header>  
-        <h1>LISANDRO GARCÍA</h1>
-        <img src="https://img.playbuzz.com/image/upload/ar_1.5,c_crop/q_auto:good,f_auto,fl_lossy,w_640,c_limit,dpr_1/v1550569572/imjp7dcb62qua8ja52hl.png" 
+        <img src="https://vivolabs.es/wp-content/uploads/2022/03/perfil-hombre-vivo.png" 
         alt="Foto retrato de mi persona. Actualice su navegador para poder visualizar el contenido."
-        height="100px" width="100px"/>  <!--TOCAR ESTO -->
+        height="100px" width="100px"/>
+        <h1>GUILLERMO RODRIGUEZ</h1>  
     </header>
-                         <!--CONTACTO-->
-    <aside>
-        <section>
-            <div>
-                <h2>CONTACTO</h2>
-                <ul>
-                    <li>Edad: 28</li>
-                    <li>Residencia: Argentina</li>
-                    <li>Correo:lisandrogarcía8219@outlook.com</li>           <!-- VER SI SE PUEDE CAMBIAR DE LISTA DESORDENADA A PONERLE 'p' CON EMOJIS AL LADO QUE HAGAN REF AL DATO -->
-                    <li>Teléfono:+5491187427412</li>
-                    <li>Dirección:Av. Siempre Viva 742, Almagro</li>
-                </ul>
-            </div>
-        </section>
-                                 <!--APTITUDES-->
-        <section>
-            <div>
-                <h2>APTITUDES</h2>
-                <ul>
-                    <li>Conocimiento de Frameworks.</li>
-                    <li>Dominio de diferentes Lenguajes de Programación.</li>
-                    <li>Rápida adaptación a nuevos entornos de trabajo.</li>
-                    <li>Alta interés por la innovación tecnológica.</li>
-                </ul>
-            </div>
-        </section>
-                                 <!--IDIOMAS-->
-        <section>
-            <div>
-                <h2>IDIOMAS</h2>
-                <p>Español: idioma nativo.</p>
-                <p>Inglés: avanzado.</p>
-            </div>
-        </section>
-    </aside>
-                        <!--EXPERIENCIA LABORAL-->
+<!--DATOS GENERALES-->
     <div>
+        <section>
+                <h2>DATOS GENERALES</h2>
+                <p class="justificar">Edad: 28</p>
+                <p class="justificar">Residencia: Argentina</p>
+                <p class="justificar">Email: guillerod@example.com</p>           <!-- VER SI SE PUEDE PONERLE 'p' CON EMOJIS AL LADO QUE HAGAN REF AL DATO -->
+                <p class="justificar">Teléfono: +54 9 1187427422</p>
+        </section>
+<!--EXPERIENCIA LABORAL-->
         <section>
             <h2>EXPERIENCIA LABORAL</h2>
             <h3>Desarrollador Front End</h3>
-            <p>Agencia de Marketing - Buenos Aires (02/2017 Hasta 03/2018)</p>
+            <p class="linesize">Marketing S.A - Buenos Aires (02/2017 Hasta 03/2018)</p>
             <ul>
                 <li>Optimización del rendimiento, la calidad y la capacidad de respuesta de las aplicaciones.</li>
                 <li>Desarrollo, mantenimiento y mejora de las funcionalidades del producto.</li>
                 <li>Análisis y desarrollo de aplicaciones adaptadas.</li>
             </ul>
             <h3>Desarrollador Front End</h3>
-            <p>Consultora BA - Buenos Aires (05/2018 Hasta Actual)</p>
+            <p class="linesize">Consultora BA - Buenos Aires (05/2018 Hasta Actual)</p>
             <ul>
                 <li>Mantenimiento y mejora de sitios web y aplicaciones.</li>
                 <li>Definición y testeo de interfaces de usuario con React.</li>
             </ul>
         </section>
-                        <!--SOBRE MÍ -->
-        <section>
-            <h2>SOBRE MÍ</h2>
-            <P>Desarrollador Front End con más de 5 años de experiencia dirigiendo proyectos de maquetado, diseño y funcionalidad
-            de Páginas Web y Aplicaciones. Centrado en la creación de códigos claros y con capacidad y predisposición para cumplir
-            con los objetivos y las necesidades del cliente.
-            </P>
-        </section>
+<!--APTITUDES-->
+    <section>
+        <h2>APTITUDES</h2>
+        <ul>
+            <li>Conocimiento de Frameworks.</li>
+            <li>Dominio de diferentes Lenguajes de Programación.</li>
+            <li>Rápida adaptación a nuevos entornos de trabajo.</li>
+            <li>Alta interés por la innovación tecnológica.</li>
+        </ul>
+    </section>
+
+<!--IDIOMAS-->
+    <section>
+        <h2>IDIOMAS</h2>
+        <ul>
+            <li>Español: nativo.</li>
+            <li>Inglés: avanzado.</li>
+            <li>Francés: básico.</li>
+        </ul> 
+    </section>
+    </div>
+<!--SOBRE MÍ --> 
+    <div>
+        <h2>SOBRE MÍ</h2>       <!-- ENCAJAR ACÁ LA FUNCIONALIDAD A MODO DE BOTÓN 'MOSTRAR MÁS'-->
+        <P class="justificar">Desarrollador Front End con más de 5 años de experiencia dirigiendo proyectos de maquetado, diseño y funcionalidad
+        de Páginas Web y Aplicaciones. Centrado en la creación de códigos claros y con capacidad y predisposición para cumplir
+        con los objetivos y las necesidades del cliente. Soy un apasionado por la programación y el desarrollo, es más que un trabajo para mí,
+        se tornó mi pasatiempos preferido junto al cine y la tecnología.
+        </P>
     </div>
 </body>
 </html>

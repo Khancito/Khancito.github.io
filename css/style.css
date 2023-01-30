@@ -1,0 +1,75 @@
+body{
+    background-color: rgb(253, 238, 238);
+}
+
+header{
+    margin-bottom: 30px;
+    background-color: rgb(253, 159, 83);
+    border-radius: 30px;
+    margin-left: 0px;
+    border-top: solid black;
+    border-right: solid black;
+    border-left: solid black;
+    border-bottom: solid black;
+}
+
+h1 {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    font-family:'Roboto', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+img{
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    margin-top: 23px;
+    float: left;
+}
+
+h2{
+    color: rgb(253, 159, 83);
+    font-family: 'Raleway', sans-serif;
+    border-bottom: solid black;
+    border-top: solid black;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: bold;
+    background-color: black;
+}
+
+h3{
+    font-family: 'Raleway', sans-serif;
+}
+
+p,span,li{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.justificar{
+    text-align: justify;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.linesize{
+    text-align: left;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.botclass{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgb(253, 159, 83);       /*USAR ESTE PARA BOTON LEER MÁS */
+    border-radius: 10px;
+}
+
+button{
+    text-align: center;
+}

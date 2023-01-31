@@ -1,16 +1,21 @@
 body{
     background-color: rgb(253, 238, 238);
+    margin-top: 2px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 1px;
 }
 
 header{
-    margin-bottom: 30px;
-    background-color: rgb(253, 159, 83);
+    background-color:rgb(253, 238, 238);
+    margin-left: -2px;
+    margin-right: -2px;
+    border: solid black;
     border-radius: 30px;
-    margin-left: 0px;
-    border-top: solid black;
-    border-right: solid black;
-    border-left: solid black;
-    border-bottom: solid black;
+    margin-bottom: 5px;
+    padding-bottom: 50px;
+    padding-top: 35px;
+    align-items: right;
 }
 
 h1 {
@@ -19,11 +24,11 @@ h1 {
     font-family:'Roboto', sans-serif;
     text-align: center;
     font-size: 40px;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 img{
-    border-radius: 50%;
+    border-radius: 35px;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 0px;
@@ -40,10 +45,13 @@ h2{
     text-align: center;
     font-weight: bold;
     background-color: black;
+    margin-top: 5px;
 }
 
 h3{
     font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 30px;
 }
 
 p,span,li{
@@ -70,6 +78,52 @@ p,span,li{
     border-radius: 10px;
 }
 
-button{
-    text-align: center;
+.contacto{
+    margin-bottom: 10px;
+}
+
+.bc{
+    color: black;
+    background: rgb(253, 238, 238);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.fa,.fa-clone{
+    font-size: 15px;
+    color:black;
+    background: rgb(253, 238, 238);
+}
+
+.fa:hover, .fa-clone:hover{
+    color: rgb(253, 159, 83);
+}
+
+.prueba{
+    border-radius: 30px;
+    border-left: solid black;
+    border-right: solid black;
+    border-bottom: solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+a{
+    color: black;
+    font-weight: 600;
+}
+
+a:hover{
+    color: rgb(253, 159, 83);    
+}
+
+@media (max-width:279px){
+    img{
+        display: flex;
+        justify-content: center;
+        border-radius: 0px;
+        padding-left: 50px;
+    }
 }

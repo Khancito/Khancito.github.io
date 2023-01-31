@@ -21,36 +21,58 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">       
-
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">   
+    <script src="https://kit.fontawesome.com/fb40852499.js" crossorigin="anonymous"></script>     <!-- SCRIPT DE ICONOS FONTAWESOME-->
 </head>
 <body>
-    <header>  
+    <header>
         <img src="https://vivolabs.es/wp-content/uploads/2022/03/perfil-hombre-vivo.png" 
         alt="Foto retrato de mi persona. Actualice su navegador para poder visualizar el contenido."
-        height="100px" width="100px"/>
-        <h1>GUILLERMO RODRIGUEZ</h1>  
+        height="70px" width="70px"/>
+        <h1>GUILLERMO RODRIGUEZ</h1>   
     </header>
-<!--DATOS GENERALES-->
+<!--DATOS DE CONTACTO-->
     <div>
-        <section>
-                <h2>DATOS GENERALES</h2>
-                <p class="justificar">Edad: 28</p>
-                <p class="justificar">Residencia: Argentina</p>
-                <p class="justificar">Email: guillerod@example.com</p>           <!-- VER SI SE PUEDE PONERLE 'p' CON EMOJIS AL LADO QUE HAGAN REF AL DATO -->
-                <p class="justificar">Teléfono: +54 9 1187427422</p>
-        </section>
+        <section class="prueba">
+                <h2>DATOS DE CONTACTO</h2>
+                <div class="contacto">
+                    <span class="justificar"> <i class="fa-solid fa-calendar-days"></i> 05/09/1990</span>
+                </div>
+                <div class="contacto">
+                    <span class="justificar"> <i class="fa-solid fa-location-dot"></i> Buenos Aires, Argentina</span>
+                </div>
+                <div class="contacto">
+                    <span class="justificar" id="texE"> <i class="fa-solid fa-envelope"></i> guillerod@example.com</span>
+                    <button class="bc" id="copiarE" onclick="copiarE()">
+                        <i class="fa fa-clone"></i>
+                    </button>            
+                </div>
+                <div class="contacto">
+                    <span class="justificar" id="texP"> <i class="fa-solid fa-square-phone"></i> +54 9 1187427422</span>
+                    <button class="bc" id="copiarP" onclick="copiarP()">
+                        <i class="fa fa-clone"></i>
+                    </button>
+                </div>
+                <div class="contacto">   
+                    <i class="fa-brands fa-square-instagram"></i> 
+                    <a href="https://www.instagram.com/ticmasedu/?hl=es" class="justificar"></i> Instagram</a>
+                </div>
+                <div class="contacto">
+                    <i class="fa-brands fa-twitter"></i>
+                    <a href="https://twitter.com/TICMAS_EDU" class="justificar"></i> Twitter</a>
+                </div>
+        </div>
 <!--EXPERIENCIA LABORAL-->
-        <section>
+        <section class="prueba">
             <h2>EXPERIENCIA LABORAL</h2>
-            <h3>Desarrollador Front End</h3>
+            <h3><u>Desarrollador Front End</u></h3>
             <p class="linesize">Marketing S.A - Buenos Aires (02/2017 Hasta 03/2018)</p>
             <ul>
                 <li>Optimización del rendimiento, la calidad y la capacidad de respuesta de las aplicaciones.</li>
                 <li>Desarrollo, mantenimiento y mejora de las funcionalidades del producto.</li>
                 <li>Análisis y desarrollo de aplicaciones adaptadas.</li>
             </ul>
-            <h3>Desarrollador Front End</h3>
+            <h3><u>Desarrollador Front End</u></h3>
             <p class="linesize">Consultora BA - Buenos Aires (05/2018 Hasta Actual)</p>
             <ul>
                 <li>Mantenimiento y mejora de sitios web y aplicaciones.</li>
@@ -58,18 +80,21 @@
             </ul>
         </section>
 <!--APTITUDES-->
-    <section>
+    <section class="prueba">
         <h2>APTITUDES</h2>
         <ul>
-            <li>Conocimiento de Frameworks.</li>
             <li>Dominio de diferentes Lenguajes de Programación.</li>
+            <li>Conocimiento de Frameworks.</li>
             <li>Rápida adaptación a nuevos entornos de trabajo.</li>
-            <li>Alta interés por la innovación tecnológica.</li>
+            <li>Alto interés por la innovación tecnológica.</li>
+            <li>Dominio de diferentes idiomas.</li>
+            <li>Firmeza en la toma de decisiones.</li>
+            <li>Prolijidad a la hora de realizar un trabajo.</li>
         </ul>
     </section>
 
 <!--IDIOMAS-->
-    <section>
+    <section class="prueba">
         <h2>IDIOMAS</h2>
         <ul>
             <li>Español: nativo.</li>
@@ -79,13 +104,16 @@
     </section>
     </div>
 <!--SOBRE MÍ --> 
-    <div>
+    <div class="prueba">
         <h2>SOBRE MÍ</h2>       <!-- ENCAJAR ACÁ LA FUNCIONALIDAD A MODO DE BOTÓN 'MOSTRAR MÁS'-->
         <P class="justificar">Desarrollador Front End con más de 5 años de experiencia dirigiendo proyectos de maquetado, diseño y funcionalidad
         de Páginas Web y Aplicaciones. Centrado en la creación de códigos claros y con capacidad y predisposición para cumplir
         con los objetivos y las necesidades del cliente. Soy un apasionado por la programación y el desarrollo, es más que un trabajo para mí,
-        se tornó mi pasatiempos preferido junto al cine y la tecnología.
+        se tornó mi pasatiempos preferido junto al cine y la tecnología. El trabajo en equipo es mi fuerte, con una fácil adaptación al entorno, 
+        y un gran sentido de lo importante que es eso para la sinergia grupal. Si bien dirigí proyectos, nunca lideré un equipo, aunque ganas 
+        no me faltan y el compromiso está presente. 
         </P>
     </div>
+    <script src="js/function.js"></script>
 </body>
 </html>

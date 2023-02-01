@@ -1,15 +1,58 @@
-function copiarE(){
-    let text=document.getElementById('texE');
-    let button=document.getElementById('copiarE');
+//
+function CopyEmail(){
+    let text=document.getElementById('TextEmail');
+    let button=document.getElementById('CopyEmail');
 
     navigator.clipboard.writeText(text.textContent);
-    document.getElementById("copiarE").innerHTML="¡Copiado!";
+    document.getElementById("CopyEmail").style.color="rgb(253, 159, 83)"
+    document.getElementById("CopyEmail").innerHTML="¡Copiado!";
+    setTimeout(() => {
+        document.getElementById("CopyEmail").innerHTML="<i class='fa fa-clone'></i>";  
+    },[1500] )
 }
 
-function copiarP(){
-    let text=document.getElementById('texP');
-    let button=document.getElementById('copiarP');
+function CopyPhone(){
+    let text=document.getElementById('TextPhone');
+    let button=document.getElementById('CopyPhone');
 
     navigator.clipboard.writeText(text.textContent);
-    document.getElementById("copiarP").innerHTML="¡Copiado!";
+    document.getElementById("CopyPhone").style.color="rgb(253, 159, 83)"
+    document.getElementById("CopyPhone").innerHTML="¡Copiado!";
+    setTimeout(() => {
+        document.getElementById("CopyPhone").innerHTML="<i class='fa fa-clone'></i>";  
+    },[1500] )
+
 }
+//
+const datos = `{
+    "nombre": "GUILLERMO RODRIGUEZ",
+    "fecha":"05/09/1990",
+    "nacionalidad":"Buenos Aires, Argentina",
+    "email":"guillerod@example.com",
+    "cel":"+54 9 1187427422"
+}`
+const obj = JSON.parse(datos); 
+
+document.getElementById("fecha").innerHTML = obj.fecha;
+document.getElementById("nacionalidad").innerHTML = obj.nacionalidad;
+document.getElementById("TextEmail").innerHTML = obj.email;
+document.getElementById("nombre").innerHTML = obj.nombre;
+document.getElementById("TextPhone").innerHTML = obj.cel;
+//
+
+let esconderBTN = document.getElementById('HideBTN');
+let esconderT = document.getElementById('HideText')
+
+esconderBTN.addEventListener('click',ShowText);
+
+function ShowText() {
+    HideText.classList.toggle('showme');
+    if(HideText.classList.contains('showme')){
+        HideBTN.innerHTML = 'Leer Menos';
+    }
+    else{
+        HideBTN.innerHTML = 'Leer Más';
+    }
+}
+
+//

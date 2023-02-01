@@ -23,97 +23,133 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">   
     <script src="https://kit.fontawesome.com/fb40852499.js" crossorigin="anonymous"></script>     <!-- SCRIPT DE ICONOS FONTAWESOME-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
 </head>
-<body>
-    <header>
-        <img src="https://vivolabs.es/wp-content/uploads/2022/03/perfil-hombre-vivo.png" 
+<body class="bodyCSS">
+    <header class="headerCSS">
+        <div class="divCSS">
+        <img class="img" src="https://vivolabs.es/wp-content/uploads/2022/03/perfil-hombre-vivo.png" 
         alt="Foto retrato de mi persona. Actualice su navegador para poder visualizar el contenido."
-        height="70px" width="70px"/>
-        <h1>GUILLERMO RODRIGUEZ</h1>   
+        height="100px" width="100px"/>
+        <h1 class="h1css" id="nombre"></h1>   
+        </div>
     </header>
 <!--DATOS DE CONTACTO-->
     <div>
-        <section class="prueba">
-                <h2>DATOS DE CONTACTO</h2>
-                <div class="contacto">
-                    <span class="justificar"> <i class="fa-solid fa-calendar-days"></i> 05/09/1990</span>
-                </div>
-                <div class="contacto">
-                    <span class="justificar"> <i class="fa-solid fa-location-dot"></i> Buenos Aires, Argentina</span>
-                </div>
-                <div class="contacto">
-                    <span class="justificar" id="texE"> <i class="fa-solid fa-envelope"></i> guillerod@example.com</span>
-                    <button class="bc" id="copiarE" onclick="copiarE()">
+        <section class="SectionContainer">
+                <h2 class="h2css">DATOS DE CONTACTO</h2>
+                <div>
+                    <i class="fa-solid fa-envelope iconss"></i>
+                    <span class="justifyCSS" id="TextEmail"></span>
+                    <button class="BtnCopy" id="CopyEmail" onclick="CopyEmail()">
                         <i class="fa fa-clone"></i>
                     </button>            
                 </div>
-                <div class="contacto">
-                    <span class="justificar" id="texP"> <i class="fa-solid fa-square-phone"></i> +54 9 1187427422</span>
-                    <button class="bc" id="copiarP" onclick="copiarP()">
+                <div>
+                    <i class="fa-solid fa-square-phone iconss"></i>
+                    <span class="justifyCSS" id="TextPhone"> </span>
+                    <button class="BtnCopy" id="CopyPhone" onclick="CopyPhone()">
                         <i class="fa fa-clone"></i>
                     </button>
                 </div>
-                <div class="contacto">   
-                    <i class="fa-brands fa-square-instagram"></i> 
-                    <a href="https://www.instagram.com/ticmasedu/?hl=es" class="justificar"></i> Instagram</a>
+                <div>
+                    <i class="fa-solid fa-location-dot iconss"></i>
+                    <span id="nacionalidad" class="justifyCSS"> </span>
                 </div>
-                <div class="contacto">
-                    <i class="fa-brands fa-twitter"></i>
-                    <a href="https://twitter.com/TICMAS_EDU" class="justificar"></i> Twitter</a>
+                <div>
+                    <i class="fa-solid fa-calendar-days iconss"></i>
+                    <span id="fecha" class="justifyCSS"></span>
+                </div>
+                <div>   
+                    <i class="fa-brands fa-square-instagram iconss"></i> 
+                    <a href="https://www.instagram.com/ticmasedu/?hl=es" class="links"></i> Instagram</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-twitter iconss"></i>
+                    <a href="https://twitter.com/TICMAS_EDU" class="links"></i> Twitter</a>
                 </div>
         </div>
 <!--EXPERIENCIA LABORAL-->
-        <section class="prueba">
-            <h2>EXPERIENCIA LABORAL</h2>
-            <h3><u>Desarrollador Front End</u></h3>
-            <p class="linesize">Marketing S.A - Buenos Aires (02/2017 Hasta 03/2018)</p>
-            <ul>
-                <li>Optimización del rendimiento, la calidad y la capacidad de respuesta de las aplicaciones.</li>
-                <li>Desarrollo, mantenimiento y mejora de las funcionalidades del producto.</li>
-                <li>Análisis y desarrollo de aplicaciones adaptadas.</li>
-            </ul>
-            <h3><u>Desarrollador Front End</u></h3>
-            <p class="linesize">Consultora BA - Buenos Aires (05/2018 Hasta Actual)</p>
-            <ul>
-                <li>Mantenimiento y mejora de sitios web y aplicaciones.</li>
-                <li>Definición y testeo de interfaces de usuario con React.</li>
-            </ul>
+        <section>
+        <div class="SectionContainer">
+            <h2 class="h2css">EXPERIENCIA LABORAL</h2>
+            <h3 class="h3css"><u>Desarrollador Front End</u></h3>
+            <p class="textcenter"><em>-Consultora BA - Buenos Aires (05/2018 Hasta Actual)-</em></p>
+            <div>
+                <ul class="ulCSS">
+                    <li>Optimización del rendimiento en Apps.</li>
+                    <li>Desarrollo y mantenimiento de Apps.</li>
+                    <li>Análisis, mantenimiento y desarrollo de Apps.</li>
+                </ul>
+            </div>
+            <h3 class="h3css"><u>Desarrollador Front End</u></h3>
+            <p class="textcenter"> <em>-Consultora BA - Buenos Aires (05/2018 Hasta Actual)-</em> </p>
+            <div>
+                <ul class="ulCSS">
+                    <li>Mantenimiento y mejora de sitios web y aplicaciones.</li>
+                    <li>Definición y testeo de interfaces de usuario con React.</li>
+                </ul>
+            </div>
+        </section>
+<!--FORMACIÓN ACADÉMICA-->
+        <section class="SectionContainer">
+            <h2 class="h2css">FORMACIÓN</h2>
+            <div>
+                <ul class="ulCSS">
+                    <li>Analista Programador (terciario)</li>
+                    <li>Desarrollo Front End (básico)</li>
+                    <li>HTML5 (avanzado)</li>
+                    <li>CSS (intermedio)</li>
+                    <li>JavaScript (básico)</li>
+                    <li>Python (intermedio)</li>
+                </ul>
+            </div>
         </section>
 <!--APTITUDES-->
-    <section class="prueba">
-        <h2>APTITUDES</h2>
-        <ul>
-            <li>Dominio de diferentes Lenguajes de Programación.</li>
-            <li>Conocimiento de Frameworks.</li>
-            <li>Rápida adaptación a nuevos entornos de trabajo.</li>
-            <li>Alto interés por la innovación tecnológica.</li>
-            <li>Dominio de diferentes idiomas.</li>
-            <li>Firmeza en la toma de decisiones.</li>
-            <li>Prolijidad a la hora de realizar un trabajo.</li>
-        </ul>
+    <section class="SectionContainer">
+        <h2 class="h2css">APTITUDES</h2>
+        <div>
+            <ul class="ulCSS">
+                <li>Dominio de diferentes Lenguajes de Programación.</li>
+                <li>Conocimiento de Frameworks.</li>
+                <li>Rápida adaptación a nuevos entornos de trabajo.</li>
+                <li>Alto interés por la innovación tecnológica.</li>
+                <li>Dominio de diferentes idiomas.</li>
+                <li>Firmeza en la toma de decisiones.</li>
+                <li>Prolijidad a la hora de realizar un trabajo.</li>
+            </ul>
+        </div>
     </section>
 
 <!--IDIOMAS-->
-    <section class="prueba">
-        <h2>IDIOMAS</h2>
-        <ul>
-            <li>Español: nativo.</li>
-            <li>Inglés: avanzado.</li>
-            <li>Francés: básico.</li>
-        </ul> 
+    <section class="SectionContainer">
+        <h2 class="h2css">IDIOMAS</h2>
+        <div>
+            <ul  class="ulCSS">
+                <li>Español: nativo.</li>
+                <li>Inglés: avanzado.</li>
+                <li>Francés: básico.</li>
+            </ul> 
+        </div>
     </section>
     </div>
 <!--SOBRE MÍ --> 
-    <div class="prueba">
-        <h2>SOBRE MÍ</h2>       <!-- ENCAJAR ACÁ LA FUNCIONALIDAD A MODO DE BOTÓN 'MOSTRAR MÁS'-->
-        <P class="justificar">Desarrollador Front End con más de 5 años de experiencia dirigiendo proyectos de maquetado, diseño y funcionalidad
+    <div class="SectionContainer">
+        <h2 class="h2css">SOBRE MÍ</h2>     
+        <p class="justifyCSS">Desarrollador Front End con más de 5 años de experiencia dirigiendo proyectos de maquetado, diseño y funcionalidad
         de Páginas Web y Aplicaciones. Centrado en la creación de códigos claros y con capacidad y predisposición para cumplir
-        con los objetivos y las necesidades del cliente. Soy un apasionado por la programación y el desarrollo, es más que un trabajo para mí,
-        se tornó mi pasatiempos preferido junto al cine y la tecnología. El trabajo en equipo es mi fuerte, con una fácil adaptación al entorno, 
-        y un gran sentido de lo importante que es eso para la sinergia grupal. Si bien dirigí proyectos, nunca lideré un equipo, aunque ganas 
-        no me faltan y el compromiso está presente. 
-        </P>
+        con los objetivos y las necesidades del cliente.</p>
+        <span class="hideme textce" id="HideText"> <p class="justifyCSS">Soy un apasionado por la programación y el desarrollo, es más que un trabajo para mí,
+            se tornó mi pasatiempos preferido junto al cine y la tecnología. El trabajo en equipo es mi fuerte, con una fácil adaptación al entorno, 
+            y un gran sentido de lo importante que es eso para la sinergia grupal. Si bien dirigí proyectos, nunca lideré un equipo, aunque ganas 
+            no me faltan y el compromiso está presente. </p>
+        </span>
+        <button type="button" class="buttonRead btn btn-dark mx-auto d-block" id="HideBTN">Leer Más</button>
     </div>
+
     <script src="js/function.js"></script>
+
 </body>
 </html>

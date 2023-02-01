@@ -1,4 +1,9 @@
-body{
+html{
+    min-width: 297px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.bodyCSS{
     background-color: rgb(253, 238, 238);
     margin-top: 2px;
     margin-right: 5px;
@@ -6,90 +11,117 @@ body{
     margin-bottom: 1px;
 }
 
-header{
-    background-color:rgb(253, 238, 238);
-    margin-left: -2px;
-    margin-right: -2px;
+.headerCSS{
+    background-color: rgb(253, 159, 83);
     border: solid black;
     border-radius: 30px;
-    margin-bottom: 5px;
-    padding-bottom: 50px;
-    padding-top: 35px;
-    align-items: right;
+    max-width: 558px;
+    max-height: 106px;
+    margin: 5px auto;
 }
 
-h1 {
-    margin-bottom: 20px;
-    margin-right: 20px;
+@media (max-width:557px){
+    .headerCSS{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.divCSS{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.iconss{
+    padding-right: 2px;
+}
+
+@media (max-width:553px){        
+    h1{ 
+        font-size: 3em;
+    }
+    img{
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+}
+
+.h1css {
     font-family:'Roboto', sans-serif;
-    text-align: center;
     font-size: 40px;
     font-weight: bold;
+    display: inline-block;
+    text-align: center;
 }
 
-img{
-    border-radius: 35px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 0px;
-    margin-top: 23px;
+.img {
     float: left;
+    border-radius: 50%;
 }
 
-h2{
+.h2css {
     color: rgb(253, 159, 83);
     font-family: 'Raleway', sans-serif;
     border-bottom: solid black;
     border-top: solid black;
-    border-radius: 15px;
+    border-radius: 40px;
     text-align: center;
     font-weight: bold;
-    background-color: black;
     margin-top: 5px;
+    background-color: black;
+    margin-bottom: 20px;
 }
 
-h3{
+.h3css {
     font-family: 'Raleway', sans-serif;
     font-weight: bolder;
     margin-bottom: 30px;
+    float: center;
 }
 
 p,span,li{
     font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
 }
 
-.justificar{
+.justifyCSS{
     text-align: justify;
     font-weight: bold;
     font-size: 15px;
 }
 
-.linesize{
-    text-align: left;
+.textcenter,.ulCSS{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     font-weight: bold;
     font-size: 15px;
 }
 
-.botclass{
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-    background-color: rgb(253, 159, 83);       /*USAR ESTE PARA BOTON LEER MÁS */
-    border-radius: 10px;
-}
-
-.contacto{
-    margin-bottom: 10px;
-}
-
-.bc{
+.BtnCopy{
     color: black;
     background: rgb(253, 238, 238);
     border: none;
     outline: none;
     border-radius: 10px;
     cursor: pointer;
+    transition: all 300ms;
 }
+
+.BtnCopy:hover{
+    transform: scale(1.40);
+}
+
+.links{
+    text-align: justify;
+    font-weight: bold;
+    font-size: 15px;
+    transition: all 300ms;
+    color: black;
+}
+
 .fa,.fa-clone{
     font-size: 15px;
     color:black;
@@ -100,30 +132,36 @@ p,span,li{
     color: rgb(253, 159, 83);
 }
 
-.prueba{
-    border-radius: 30px;
+.SectionContainer{
+    border-radius: 40px;
     border-left: solid black;
     border-right: solid black;
     border-bottom: solid black;
+    border-top: solid black;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
 }
-
-a{
-    color: black;
-    font-weight: 600;
-}
-
 a:hover{
     color: rgb(253, 159, 83);    
 }
 
-@media (max-width:279px){
-    img{
-        display: flex;
-        justify-content: center;
-        border-radius: 0px;
-        padding-left: 50px;
-    }
+.hideme{
+    display: none;
+}
+
+.showme{
+    display: block;
+}
+
+.leerMas{
+    float: center;
+}
+
+.buttonRead{
+    color: rgb(253, 159, 83) !important;
+    font-size: 15px !important;
 }

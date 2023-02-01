@@ -3,6 +3,7 @@ html{
     max-width: 1200px;
     margin: 0 auto;
 }
+
 .bodyCSS{
     background-color: rgb(253, 238, 238);
     margin-top: 2px;
@@ -12,12 +13,11 @@ html{
 }
 
 .headerCSS{
-    background-color: rgb(253, 159, 83);
-    border: solid black;
-    border-radius: 30px;
+    background-color: rgb(253, 238, 238);
+    border-top: 2px solid black;
     max-width: 558px;
     max-height: 106px;
-    margin: 5px auto;
+    margin: 10px auto;
 }
 
 @media (max-width:557px){
@@ -26,12 +26,21 @@ html{
         max-height: 100%;
     }
 }
+
 .divCSS{
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.divIcons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
 }
 
 .iconss{
@@ -59,6 +68,8 @@ html{
 .img {
     float: left;
     border-radius: 50%;
+    margin-top: 10px;
+    padding-bottom: 5px;
 }
 
 .h2css {
@@ -145,6 +156,7 @@ p,span,li{
     margin-bottom: 5px;
     text-align: center;
 }
+
 a:hover{
     color: rgb(253, 159, 83);    
 }

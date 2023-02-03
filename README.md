@@ -13,7 +13,6 @@ la Web cuenta con:
 
   * Botones que copian al portapapeles.
   * Botón que oculta/muestra información.
-  * Sonidos al dar clicks a ciertos enlaces y botones.
   * Descarga de contenido.
   * Manejo de objetos.
   * Uso de LocalStorage (contador de clicks en botón "Leer Más/Menos").

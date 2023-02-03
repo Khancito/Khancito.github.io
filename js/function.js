@@ -62,11 +62,6 @@ function ShowText() {
 
 //
 
-const audio = new Audio();
-audio.src = "https://www.fesliyanstudios.com/play-mp3/387";
-
-//
-
 function clickCounter() {
     if (typeof(Storage) !== "undefined") {
       if (localStorage.clickcount) {

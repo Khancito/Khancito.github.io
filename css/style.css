@@ -1,33 +1,22 @@
-html{
+html {
     min-width: 297px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.bodyCSS{
+.bodyCSS {
     background-color: rgb(253, 238, 238);
-    margin-top: 2px;
-    margin-right: 5px;
-    margin-left: 5px;
-    margin-bottom: 1px;
+    margin: 2px 5px 1px 5px;
 }
 
-.headerCSS{
+.headerCSS {
     background-color: rgb(253, 238, 238);
-    border-top: 2px solid black;
     max-width: 558px;
     max-height: 106px;
     margin: 10px auto;
 }
 
-@media (max-width:557px){
-    .headerCSS{
-        max-width: 100%;
-        max-height: 100%;
-    }
-}
-
-.divCSS{
+.divCSS {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -35,7 +24,7 @@ html{
     flex-wrap: wrap;
 }
 
-.divIcons{
+.divIcons {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -43,18 +32,17 @@ html{
     flex-direction: column;
 }
 
-.iconss{
-    padding-right: 2px;
+.divContact {
+    text-align: center;
+    display: inline-block;
+    border: none;
+    padding: 15px;
 }
 
-@media (max-width:553px){        
-    h1{ 
-        font-size: 3em;
-    }
-    img{
-        margin-bottom: 30px;
-        margin-top: 30px;
-    }
+.iconss {
+    padding-right: 2px;
+    padding-bottom: 10px;
+    color: black;
 }
 
 .h1css {
@@ -75,14 +63,12 @@ html{
 .h2css {
     color: rgb(253, 159, 83);
     font-family: 'Raleway', sans-serif;
-    border-bottom: solid black;
-    border-top: solid black;
+    border: solid black;
     border-radius: 40px;
+    margin: 5px 0px 20px 0px;
     text-align: center;
     font-weight: bold;
-    margin-top: 5px;
     background-color: black;
-    margin-bottom: 20px;
 }
 
 .h3css {
@@ -92,18 +78,20 @@ html{
     float: center;
 }
 
-p,span,li{
+p,span,li {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
+    padding-bottom: 5px;
+    text-align: left;
 }
 
-.justifyCSS{
+.justifyCSS {
     text-align: justify;
     font-weight: bold;
     font-size: 15px;
 }
 
-.textcenter,.ulCSS{
+.textcenter {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -111,21 +99,28 @@ p,span,li{
     font-size: 15px;
 }
 
-.BtnCopy{
+#inline {
+    display: inline-block;
+    font-weight:bolder;
+    font-size: 17px; 
+    padding: 5px;
+    margin: 5px 10px 5px 10px;
+}
+
+.BtnCopy {
     color: black;
-    background: rgb(253, 238, 238);
+    background: none;
     border: none;
     outline: none;
-    border-radius: 10px;
     cursor: pointer;
     transition: all 300ms;
 }
 
-.BtnCopy:hover{
+.BtnCopy:hover {
     transform: scale(1.40);
 }
 
-.links{
+.links {
     text-align: justify;
     font-weight: bold;
     font-size: 15px;
@@ -133,47 +128,85 @@ p,span,li{
     color: black;
 }
 
-.fa,.fa-clone{
+.fa,.fa-clone {
     font-size: 15px;
     color:black;
     background: rgb(253, 238, 238);
 }
 
-.fa:hover, .fa-clone:hover{
-    color: rgb(253, 159, 83);
-}
-
-.SectionContainer{
-    border-radius: 40px;
-    border-left: solid black;
-    border-right: solid black;
-    border-bottom: solid black;
+.SectionContainer {
+    padding: 10px 20px 20px 20px;
     border-top: solid black;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-top: 10px;
     margin-bottom: 5px;
     text-align: center;
 }
 
-a:hover{
+a:hover, .fa:hover, .fa-clone:hover {
     color: rgb(253, 159, 83);    
 }
 
-.hideme{
+.downloadBTN:hover{
+    color: rgb(253, 159, 83);
+    transform: scale(1.10);
+}
+
+.hideme {
     display: none;
 }
 
-.showme{
+.showme {
     display: block;
 }
 
-.leerMas{
+.leerMas {
     float: center;
 }
 
-.buttonRead{
+.buttonRead {
     color: rgb(253, 159, 83) !important;
     font-size: 15px !important;
+}
+
+.downloadBTN {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    transition: all 300ms;
+    color: black;
+    border: none;
+}
+
+@media (max-width:557px) {
+    .headerCSS {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+@media (max-width:553px) {        
+    .h1css { 
+        font-size: 3em;
+    }
+    img {
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:754px) {
+    .divContact {
+        text-align: center;
+        margin: 3px;
+        padding: 3px;
+        display: flex;
+        justify-content: left;
+    }
+    .iconss {
+        padding: 3px 10px 10px 0px;
+    }
+    .BtnCopy {
+        padding-bottom: 10px;
+        margin-left: 5px;
+        font-size: 10px;
+    }
 }
